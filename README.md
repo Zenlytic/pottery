@@ -1,3 +1,7 @@
+# Note From Zenlytic
+
+This repository is a fork of [brainix/pottery](https://github.com/brainix/pottery) intended only for internal usage or making contributions to the original project. This repository is not intended for public use or distribution. All modifications are released under the original Apache 2.0 license.
+
 # Pottery: Redis for Humans 🌎🌍🌏
 
 [Redis](http://redis.io/) is awesome, but [Redis
