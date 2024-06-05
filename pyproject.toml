@@ -12,7 +12,7 @@ classifiers = ["Private :: Do Not Upload"]
 
 [tool.poetry.dependencies]
 python = ">=3.8.1, <4"
-redis = "5.1.0b4"
+redis = "5.0.4"
 typing-extensions = "4.11.0"
 mmh3 = "4.1.0"
 

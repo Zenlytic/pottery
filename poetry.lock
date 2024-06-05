@@ -1085,17 +1085,17 @@ files = [
 
 [[package]]
 name = "redis"
-version = "5.1.0b4"
+version = "5.0.4"
 description = "Python client for Redis database and key-value store"
 optional = false
-python-versions = ">=3.8"
+python-versions = ">=3.7"
 files = [
-    {file = "redis-5.1.0b4-py3-none-any.whl", hash = "sha256:8a74fae7cbd25493142c8cc2f79c21b2e3c03bf85dd3525a1db9f33ff47a3f2d"},
-    {file = "redis-5.1.0b4.tar.gz", hash = "sha256:9cac9a8ce8926a61f2dd81992978ffccd98a2bd065ac97694d49d28e7c928b59"},
+    {file = "redis-5.0.4-py3-none-any.whl", hash = "sha256:7adc2835c7a9b5033b7ad8f8918d09b7344188228809c98df07af226d39dec91"},
+    {file = "redis-5.0.4.tar.gz", hash = "sha256:ec31f2ed9675cc54c21ba854cfe0462e6faf1d83c8ce5944709db8a4700b9c61"},
 ]
 
 [package.dependencies]
-async-timeout = ">=4.0.3"
+async-timeout = {version = ">=4.0.3", markers = "python_full_version < \"3.11.3\""}
 
 [package.extras]
 hiredis = ["hiredis (>=1.0.0)"]
@@ -1441,4 +1441,4 @@ test = ["Cython (>=0.29.36,<0.30.0)", "aiohttp (==3.9.0b0)", "aiohttp (>=3.8.1)"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8.1, <4"
-content-hash = "88b4deffebad3aa48647d21f26682c2eaffa809878958ef9c3daf0c884e0ca20"
+content-hash = "10caa487ef60a6ddcfa65b97c05542a6f3855a0a4e4696aa2384c5648be81de6"
