@@ -69,9 +69,6 @@ target/
 # IPython Notebook
 .ipynb_checkpoints
 
-# pyenv
-.python-version
-
 # celery beat schedule file
 celerybeat-schedule
 
@@ -87,8 +84,6 @@ ENV/
 
 # Rope project settings
 .ropeproject
-
-
 
 # Raj's additions
 dump.rdb
