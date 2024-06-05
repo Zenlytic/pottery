@@ -38,14 +38,14 @@ jobs:
     - name: Install dependencies
       run: poetry install
     - name: Test with pytest
-      run: pytest --verbose --cov-config=.coveragerc --cov=pottery --cov=tests
+      run: poetry run pytest --verbose --cov-config=.coveragerc --cov=pottery --cov=tests
     - name: Type check with Mypy
-      run: mypy
+      run: poetry run mypy
     - name: Lint with Flake8 and isort
       run: |
-        flake8 *\.py pottery/*\.py tests/*\.py --count --max-complexity=10 --statistics
-        isort *\.py pottery/*\.py tests/*\.py --check-only --diff
+        poetry run flake8 *\.py pottery/*\.py tests/*\.py --count --max-complexity=10 --statistics
+        poetry run isort *\.py pottery/*\.py tests/*\.py --check-only --diff
     - name: Check for security vulnerabilities with Bandit and Safety
       run: |
-        bandit --recursive pottery
-        safety check --file poetry.lock
+        poetry run bandit --recursive pottery
+        poetry run safety check --file poetry.lock
