@@ -1,0 +1,7 @@
+version: 2.0
+security:
+  ignore-vulnerabilities:
+    70612:
+      reason: >-
+        The maintainer and multiple third parties believe that this vulnerability isn't
+        valid because users shouldn't use untrusted templates without sandboxing.
